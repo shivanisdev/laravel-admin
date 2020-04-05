@@ -1,0 +1,41 @@
+{
+    "type": "web",
+    "fields": [
+        {
+            "name": "name",
+            "length": 100,
+            "type": "string"
+        },
+        {
+            "name": "number_of_workspaces",
+            "type": "smallInteger"
+        },
+        {
+            "name": "total_storage",
+            "type": "bigInteger"
+        },
+        {
+            "name": "number_of_workspace_admins",
+            "type": "smallInteger"
+        },
+        {
+            "name": "number_of_sub_company_admins",
+            "type": "smallInteger"
+        },
+        {
+            "name": "duration",
+            "type": "smallInteger"
+        },
+        {
+            "name": "status",
+            "type": "smallInteger"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "created_by",
+            "type": "belongsTo",
+            "model": "User"
+        }
+    ]
+}
